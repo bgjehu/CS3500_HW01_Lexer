@@ -175,7 +175,7 @@ def identifier_recognizer(state, char):   #   is automata
         if char.isalpha():
             return accept_state
     elif state == accept_state:
-        if char.isdigit() or char.isalpha or char == '_':
+        if char.isdigit() or char.isalpha() or char == '_':
             return accept_state
     #   no match
     return fault_state
